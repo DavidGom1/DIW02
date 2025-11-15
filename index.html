@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/res/img/favicon.ico" type="image/x-icon">
     <title>Jumilla</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
@@ -50,7 +52,7 @@
                         <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
                             <h1>Historia viva</h1>
                             <p>El castillo, punto de partida para explorar una tierra única.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Cómo conocerlo</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#entrada-castillo">Cómo conocerlo</a></p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +86,7 @@
         </div>
         <div class="container marketing">
             <hr class="featurette-divider">
-            <div class="row featurette" id="ruta-vino">
+            <div class="row featurette d-flex" id="ruta-vino">
                 <div class="col-md-7 text-start d-flex flex-column justify-content-center order-md-">
                     <h2 class="featurette-heading fw-normal lh-1">
                         Ruta del vino de Jumilla
@@ -96,43 +98,35 @@
                         disfrutas
                         de visitas guiadas, catas, gastronomía local y actividades en plena naturaleza.
                     </p>
-                    <button type="button" class="btn btn-primary my-3 btn-lg w-60 align-self-center"
-                        onclick="window.location.href='ruta-vino.html'">
-                        Conoce la ruta del vino
-                    </button>
                 </div>
-                <div class="col-md-5 order-md-2">
+                <div class="col-md-4 order-md-2 ms-auto">
                     <img src="/res/img/ruta-vino-jumilla.jpg" class="img-fluid mx-auto d-block rounded-5"
-                        alt="Ruta del vino de Jumilla" style="aspect-ratio: 1 / 1; object-fit: cover;">
+                        alt="Ruta del vino de Jumilla" style="object-fit: cover;">
                 </div>
             </div>
             <hr class="featurette-divider">
-            <div class="row featurette" id="historia">
-                <div class="col-md-7 text-start d-flex flex-column justify-content-center order-md-2">
+            <div class="row featurette d-flex" id="historia">
+                <div class="col-md-7 text-start d-flex flex-column justify-content-center order-md-2 ms-auto">
                     <h2 class="featurette-heading fw-normal lh-1">
                         Historia de Jumilla
                         <span class="text-body-secondary">un pasado que sigue muy presente.</span>
                     </h2>
                     <p class="lead">
-                        Jumilla es una ciudad con raíces íberas, romanas y medievales, coronada por su castillo del
-                        siglo XV.
+                        Una ciudad con raíces íberas, romanas y medievales, coronada por su castillo del
+                        siglo XII.
                         A sus pies creció una villa de calles históricas, iglesias y casas señoriales ligadas al
                         comercio y a la vid.
                         Hoy, patrimonio, tradición y cultura del vino se unen en un destino que mantiene viva su
                         esencia.
                     </p>
-                    <button type="button" class="btn btn-primary my-3 btn-lg w-60 align-self-center"
-                        onclick="window.location.href='historia-jumilla.html'">
-                        Conoce la historia de Jumilla
-                    </button>
                 </div>
-                <div class="col-md-5 order-md-1">
+                <div class="col-md-4 order-md-1 ">
                     <img src="/res/img/excavacoimbra.jpg" class="img-fluid mx-auto d-block rounded-5"
-                        alt="Historia de Jumilla" style="aspect-ratio: 1 / 1; object-fit: cover;">
+                        alt="Historia de Jumilla" style="object-fit: cover;">
                 </div>
             </div>
             <hr class="featurette-divider">
-            <div class="row featurette" id="fiestas">
+            <div class="row featurette d-flex" id="fiestas">
                 <div class="col-md-7 text-start d-flex flex-column justify-content-center order-md-">
                     <h2 class="featurette-heading fw-normal lh-1">
                         Fiestas de Jumilla
@@ -144,14 +138,10 @@
                         donde cultura, tradición y alegría se mezclan en un ambiente único que conquista
                         a quienes lo viven de cerca.
                     </p>
-                    <button type="button" class="btn btn-primary my-3 btn-lg w-60 align-self-center"
-                        onclick="window.location.href='fiestas.html'">
-                        Conoce las fiestas
-                    </button>
                 </div>
-                <div class="col-md-5 order-md-2">
+                <div class="col-md-4 order-md-2 ms-auto">
                     <img src="/res/img/fiestas-patronales-jumilla.jpg" class="img-fluid mx-auto d-block rounded-5"
-                        alt="Fiestas de Jumilla" style="aspect-ratio: 1 / 1; object-fit: cover;">
+                        alt="Fiestas de Jumilla" style="object-fit: cover;">
                 </div>
             </div>
             <hr class="featurette-divider"> <!-- /END THE FEATURETTES -->
@@ -159,20 +149,21 @@
         <section class="container my-5" id="entrada-castillo">
 
             <!-- Cabecera tipo blog -->
-            <header class="mb-4">
-                <h1 class="fw-bold display-5">El Castillo de Jumilla: historia de una fortaleza que domina el valle</h1>
-                <p class="text-body-secondary fs-5">Un recorrido por el símbolo medieval más emblemático de la ciudad.
-                </p>
+            <header class="mb-4 text-center">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    El Castillo:
+                    <span class="text-body-secondary"> historia de una fortaleza que domina el valle</span>
+                </h2>
             </header>
 
             <!-- Imagen destacada del artículo -->
-            <div class="mb-4">
+            <div class="mb-4 " style="max-width: 800px; margin: 0 auto;">
                 <img src="/res/img/castillo-jumilla-aerea-gr.jpg" class="img-fluid rounded-5 shadow-sm w-100"
                     alt="Castillo de Jumilla" style="aspect-ratio: 16/9; object-fit: cover;">
             </div>
 
             <!-- Cuerpo del artículo estilo blog -->
-            <article class="fs-5 lh-lg">
+            <article class="fs-5 lh-lg mx-auto" style="max-width: 800px;">
                 <p>
                     El Castillo de Jumilla, asentado sobre el cerro de Santa Ana, ha sido durante siglos el gran
                     vigilante del valle. Su posición estratégica convirtió este enclave en un punto clave de defensa
@@ -192,81 +183,143 @@
                     donde la historia se mezcla con vistas espectaculares del casco urbano y del paisaje vitivinícola
                     que lo rodea.
                 </p>
+                <div class="dropdown mt-3">
+    <button class="btn btn-primary btn-lg dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+        Más sobre el castillo
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+            <button class="dropdown-item"
+                    type="button"
+                    onclick="mostrarCastilloBloque('castillo-mas-historia')">
+                Más historia sobre el castillo
+            </button>
+        </li>
+        <li>
+            <button class="dropdown-item"
+                    type="button"
+                    onclick="mostrarCastilloBloque('castillo-como-visitarlo')">
+                Cómo visitarlo
+            </button>
+        </li>
+    </ul>
+</div>
 
-                <!-- Botón para leer más -->
-                <button type="button" class="btn btn-primary btn-lg mt-3"
-                    onclick="window.location.href='castillo.html'">
-                    Leer más sobre el castillo
-                </button>
+<!-- Contenido que se abre debajo -->
+<div id="castillo-info" class="mt-4">
+
+    <!-- Bloque: Más historia -->
+    <div id="castillo-mas-historia" class="d-none">
+        <h3 class="h4 mb-3">Más historia sobre el castillo</h3>
+        <p>
+            El Castillo de Jumilla formó parte de la red defensiva que protegía los caminos
+            entre la Meseta y el litoral mediterráneo. Durante siglos fue escenario de conflictos
+            entre reinos, refugio de tropas y punto estratégico de vigilancia.
+        </p>
+        <p>
+            Sus diferentes reformas han dejado huella en la estructura: murallas reforzadas,
+            estancias interiores adaptadas a nuevos usos y zonas que hoy se pueden recorrer
+            en visitas guiadas, como el patio de armas o las torres.
+        </p>
+    </div>
+
+    <!-- Bloque: Cómo visitarlo -->
+    <div id="castillo-como-visitarlo" class="d-none">
+        <h3 class="h4 mb-3">Cómo visitar el castillo</h3>
+        <p>
+            El castillo se encuentra en lo alto del cerro que corona la ciudad. Se puede acceder
+            en vehículo por la carretera de subida o a pie, siguiendo un recorrido con vistas
+            panorámicas de Jumilla y su entorno.
+        </p>
+        <p>
+            Consulta los horarios de apertura y las posibles visitas guiadas en la oficina de
+            turismo o en la web municipal. Se recomienda calzado cómodo y, en verano, llevar agua
+            y protección solar para disfrutar del recorrido con tranquilidad.
+        </p>
+        <button type="button"
+                class="btn btn-primary"
+                onclick="window.open('https://www.google.com/maps?q=Castillo+de+Jumilla', '_blank')">
+            Ver en Maps
+        </button>
+    </div>
+
+</div>
             </article>
 
             <hr class="featurette-divider"> <!-- /END THE FEATURETTES -->
         </section>
         <section class="container my-5" id="entrada-teatro-vico">
-
             <!-- Cabecera tipo blog -->
-            <header class="mb-4">
-                <h1 class="fw-bold display-5">El Teatro Vico: historia viva del arte y la cultura en Jumilla</h1>
-                <p class="text-body-secondary fs-5">
-                    Un escenario centenario que sigue emocionando al público generación tras generación.
-                </p>
+            <header class="mb-4 text-center">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    Teatro Vico:
+                    <span class="text-body-secondary"> historia, arte y cultura en el corazón de Jumilla</span>
+                </h2>
             </header>
 
-            <!-- Imagen destacada -->
-            <div class="mb-4">
-                <img src="/res/img/teatro-vico-gr.jpg" class="img-fluid rounded-5 shadow-sm w-100"
+            <!-- Imagen destacada (más pequeña) -->
+            <div class="mb-4 " style="max-width: 800px; margin: 0 auto;">
+                <img src="/res/img/teatro-vico-gr.jpg" class="img-fluid  rounded-5 shadow-sm d-block mx-auto"
                     alt="Teatro Vico de Jumilla" style="aspect-ratio: 16/9; object-fit: cover;">
             </div>
 
-            <!-- Cuerpo del artículo -->
-            <article class="fs-5 lh-lg">
+            <!-- Cuerpo del artículo (versión corta) -->
+            <article class="fs-5 lh-lg mx-auto" style="max-width: 800px;">
                 <p>
-                    El Teatro Vico es uno de los espacios culturales más emblemáticos de Jumilla.
-                    Inaugurado en el siglo XIX, su arquitectura de estilo italiano, con platea, palcos y
-                    un elegante techo decorado, lo convierte en una verdadera joya para los amantes del teatro
-                    y las artes escénicas.
+                    El Teatro Vico es uno de los grandes referentes culturales de Jumilla. Su sala de estilo italiano,
+                    con platea y palcos, acoge obras de teatro, conciertos y actos festivos que forman parte de la vida
+                    cultural de la ciudad.
+                </p>
+                <p>
+                    Hoy sigue siendo un punto de encuentro para vecinos y visitantes, un lugar donde disfrutar del
+                    espectáculo en un entorno con historia.
                 </p>
 
-                <p>
-                    A lo largo de su historia, el teatro ha acogido representaciones dramáticas, conciertos,
-                    zarzuelas, actos festivos y encuentros sociales que forman parte de la memoria colectiva
-                    del municipio. Su nombre rinde homenaje al actor jumillano Bernardo Vico, una figura
-                    destacada del panorama teatral español.
-                </p>
-
-                <p>
-                    Tras varias restauraciones, el Teatro Vico conserva su esencia original mientras incorpora
-                    mejoras técnicas que permiten programar espectáculos contemporáneos. Hoy es un punto de
-                    encuentro cultural imprescindible y uno de los espacios más queridos por vecinos y visitantes.
-                </p>
-
-                <!-- Botón para leer más -->
-                <button type="button" class="btn btn-primary btn-lg mt-3"
-                    onclick="window.location.href='teatro-vico.html'">
-                    Leer más sobre el Teatro Vico
+                <!-- Botón para mostrar el mapa -->
+                <button type="button" class="btn btn-primary btn-lg mt-3" id="btn-mapa-teatro-vico"
+                    onclick="toggleMapa(38.5721, -1.3135)">
+                    Cómo llegar
                 </button>
             </article>
 
-            <hr class="featurette-divider"> <!-- /END THE FEATURETTES -->
+            <!-- Mapa oculto inicialmente -->
+            <div id="mapa-teatro-vico" class="mt-4 d-none">
+                <div class="ratio ratio-16x9 mb-3" style="max-width: 800px; margin: 0 auto;">
+                    <iframe src="https://www.google.com/maps?q=Teatro+Vico+Jumilla&output=embed" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg mt-3"
+                        onclick="window.open('https://www.google.com/maps?q=Teatro+Vico+Jumilla', '_blank')">
+                        Ir a Maps
+                    </button>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
         </section>
         <section class="container my-5" id="entrada-gastronomia">
 
             <!-- Cabecera tipo blog -->
-            <header class="mb-4">
-                <h1 class="fw-bold display-5">Gastronomía de Jumilla: sabores que cuentan una historia</h1>
-                <p class="text-body-secondary fs-5">
-                    Tradición, producto local y recetas que han pasado de generación en generación.
-                </p>
+            <header class="mb-4 text-center">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    Gastronomía de Jumilla:
+                    <span class="text-body-secondary"> sabores que cuentan una historia</span>
+                </h2>
             </header>
-
             <!-- Imagen destacada -->
-            <div class="mb-4">
-                <img src="/res/img/arroz-conejo-caracoles-gr.jpg" class="img-fluid rounded-5 shadow-sm w-100"
+            <div class="mb-4 " style="max-width: 800px; margin: 0 auto;">
+                <img src="/res/img/arroz-conejo-caracoles-gr.jpg" class="img-fluid  rounded-5 shadow-sm d-block mx-auto"
                     alt="Gastronomía de Jumilla" style="aspect-ratio: 16/9; object-fit: cover;">
             </div>
 
             <!-- Cuerpo del artículo -->
-            <article class="fs-5 lh-lg">
+            <article class="fs-5 lh-lg mx-auto" style="max-width: 800px;">
                 <p>
                     La gastronomía de Jumilla es un reflejo de su paisaje, de su historia y de la manera en que sus
                     habitantes han sabido aprovechar los productos de la tierra. Platos contundentes, sabrosos y
@@ -287,11 +340,64 @@
                     cocina y enología en una experiencia que sorprende al visitante y enamora al paladar.
                 </p>
 
-                <!-- Botón para leer más -->
-                <button type="button" class="btn btn-primary btn-lg mt-3"
-                    onclick="window.location.href='gastronomia.html'">
-                    Descubre la gastronomía de Jumilla
+                <!-- Botón que despliega la tabla -->
+                <button class="btn btn-primary btn-lg mt-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#tablaRecetas" aria-expanded="false" aria-controls="tablaRecetas">
+                    Ver recetas típicas de Jumilla
                 </button>
+
+                <!-- Contenedor colapsable -->
+                <div class="collapse mt-4" id="tablaRecetas">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered align-middle text-center">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Receta</th>
+                                    <th>Descripción</th>
+                                    <th>Plato</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Arroz con conejo y caracoles</td>
+                                    <td>El plato más emblemático de Jumilla, cocinado a fuego lento con productos
+                                        locales.</td>
+                                    <td>Principal</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Gazpacho jumillano</td>
+                                    <td>Guiso tradicional con tortas de gazpacho, carnes y hierbas aromáticas.</td>
+                                    <td>Principal</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Gachamiga con orugas</td>
+                                    <td>Receta rural elaborada con harina, aceite y ajo, se añaden orugas (una rúcula
+                                        silvestre), ideal para días fríos o trabajos duros.</td>
+                                    <td>Principal</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Empanadilla de patata</td>
+                                    <td>Empanadilla de patata, típica de la región, rellena de ingredientes locales.
+                                    </td>
+                                    <td>Entrante</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Rollos de vino</td>
+                                    <td>Dulce típico elaborado con vino jumillano, azúcar y aceite.</td>
+                                    <td>Postre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
             </article>
 
         </section>

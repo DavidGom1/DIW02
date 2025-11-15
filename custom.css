@@ -9,6 +9,11 @@
     --bs-nav-pills-link-active-color: #fff;
 }
 
+.table-primary {
+    --bs-table-bg: #7a5668;
+    --bs-table-color: #ffffff;
+}
+
 .btn-primary {
     background-color: #660033;
     border-color: #660033;
@@ -19,12 +24,18 @@
     border-color: #7a3946;
 }
 
+
+
 #imglogo {
     height: 50px;
 }
 
 #myCarousel .carousel-item {
     height: 70vh;
+}
+
+.featurette img {
+    aspect-ratio: 1/1;
 }
 
 #myCarousel .carousel-item img {
@@ -38,7 +49,11 @@
         height: 50vh;
     }
 }
-
+@media (max-width: 768px) {
+    .featurette img {
+        aspect-ratio: 16/9;
+    }
+}
 @media (max-width: 576px) {
     #myCarousel .carousel-item {
         height: 30vh;
