@@ -1,0 +1,46 @@
+:root,
+[data-bs-theme="light"] {
+    --bs-primary: #660033;
+    --bs-primary-rgb: 102,0,51;
+    --bs-link-color: #ffffff;
+    --bs-link-hover-color: #b6b6b6;
+    --bs-nav-pills-link-active-bg: #660033;
+    --bs-nav-pills-link-active-bg-rgb: 102,0,51;
+    --bs-nav-pills-link-active-color: #fff;
+}
+
+.btn-primary {
+    background-color: #660033;
+    border-color: #660033;
+}
+
+.btn-primary:hover {
+    background-color: #7a3946;
+    border-color: #7a3946;
+}
+
+#imglogo {
+    height: 50px;
+}
+
+#myCarousel .carousel-item {
+    height: 70vh;
+}
+
+#myCarousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   /* Rellena y recorta lo que sobre */
+}
+
+@media (max-width: 992px) {
+    #myCarousel .carousel-item {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    #myCarousel .carousel-item {
+        height: 30vh;
+    }
+}
