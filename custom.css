@@ -1,3 +1,4 @@
+/* Sobrescribe tokens de Bootstrap con la paleta corporativa */
 :root,
 [data-bs-theme="light"] {
     --bs-primary: #660033;
@@ -9,21 +10,27 @@
     --bs-nav-pills-link-active-color: #fff;
 }
 
+/* Afinamos tablas destacadas para que mantengan contraste con el branding */
 .table-primary {
     --bs-table-bg: #7a5668;
     --bs-table-color: #ffffff;
 }
 
-.btn-primary {
+/* Botones principales alineados con el color vino */
+.btn-primary, .btn:first-child:active, :not(.btn-check)+.btn:active {
     background-color: #660033;
     border-color: #660033;
 }
 
-.btn-primary:hover {
-    background-color: #7a3946;
-    border-color: #7a3946;
+
+.btn-primary:hover, .btn.show {
+    background-color: rgb(201, 51, 81);
+    border-color: #660033;
+    scale: 1.05;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
+/* Limita el ancho de las imágenes de cada entrada para una lectura cómoda */
 .entrada .imagen {
     max-width: 800px;
     margin: 0 auto;
@@ -34,14 +41,21 @@
     aspect-ratio: 16/9;
 }
 
+/* Las featurettes usan imágenes cuadradas en escritorio */
 .featurette img {
     object-fit: cover;
+}
+
+/* border radius a video de jumilla */
+#video-jumilla iframe {
+    border-radius: 1rem;
 }
 
 #imglogo {
     height: 35px;
 }
 
+/* Altura dinámica del carrusel para pantallas grandes */
 #myCarousel .carousel-item {
     height: 70vh;
 }

@@ -1,3 +1,4 @@
+// Alterna entre mostrar y ocultar el iframe del Teatro Vico y actualiza el texto del botón
 function toggleMapa() {
     const contenedor = document.getElementById('mapa-teatro-vico');
     const botonMapaTeatroVico = document.getElementById('btn-mapa-teatro-vico');
@@ -10,6 +11,7 @@ function toggleMapa() {
     }
 }
 
+// Muestra solo el bloque de texto seleccionado dentro de la sección del castillo
 function mostrarCastilloBloque(idBloque) {
     const bloques = [
         'castillo-mas-historia',
