@@ -24,7 +24,7 @@
     border-color: #7a3946;
 }
 
-.entrada .imagen, .entrada article {
+.entrada .imagen {
     max-width: 800px;
     margin: 0 auto;
 }
