@@ -1,4 +1,4 @@
-/* Sobrescribe tokens de Bootstrap con la paleta corporativa */
+/* Sobrescribe variables de bootstrap */
 :root,
 [data-bs-theme="light"] {
     --bs-primary: #660033;
@@ -10,7 +10,7 @@
     --bs-nav-pills-link-active-color: #fff;
 }
 
-/* Afinamos tablas destacadas para que mantengan contraste con el branding */
+/* Afinamos tablas destacadas para que mantengan contraste con el vino */
 .table-primary {
     --bs-table-bg: #7a5668;
     --bs-table-color: #ffffff;
@@ -70,8 +70,15 @@
     object-fit: cover;   /* Rellena y recorta lo que sobre */
 }
 
+#myCarousel .blurred {
+    background-color: rgba(0, 0, 0, 0.24);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+
 [id] {
-    scroll-margin-top: 90px; /* ajusta según la altura de tu navbar */
+    scroll-margin-top: 90px; /* ajusta según la altura de navbar */
 }
 
 @media (max-width: 992px) {
